@@ -1,6 +1,6 @@
 # npm
 
-https://www.npmjs.com/package/@dcnsdomains/dcns-functions
+https://www.npmjs.com/package/@dcnsdomains/functions
 
 # Reusable functions for the DcNS apps
 
