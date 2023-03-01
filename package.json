@@ -1,6 +1,6 @@
 {
   "name": "@dcnsdomains/function",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "functions for DcNS",
   "main": "src/index.ts",
   "files": [
