@@ -2,17 +2,23 @@
   "name": "@dcnsdomains/function",
   "version": "0.0.4",
   "description": "functions for DcNS",
-  "main": "src/index.ts",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "files": [
-    "src"
+    "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
     "contracts:compile:abi": "typechain --target ethers-v5 --out-dir src/abis/types \"./src/abis/**/*.json\"",
-    "pub": "yarn publish --access public"
+    "pub": "yarn publish --access public",
+    "prepublishOnly": "yarn build"
   },
-  "author": "tomokisun",
-  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git:https://github.com/dcnsdomains/dcns-function.git"
+  },
+  "author": "",
+  "license": "ISC",
   "dependencies": {
     "@typechain/ethers-v5": "^10.2.0",
     "ethers": "^5.7.2",
