@@ -102,8 +102,7 @@ export default class Registrar {
   }
 }
 
-export async function setupRegistrar(network: NETWORK_NAME) {
-  const provider = getProvider(network)
+export async function setupRegistrar(network: NETWORK_NAME, provider: StaticJsonRpcProvider) {
   let registryAddress: string
   let resolverAddress: string
   let namedRegistrarAddress: string
