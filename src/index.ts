@@ -8,3 +8,12 @@ import * as NamedRegistrarContract from './abis/NamedRegistrar.json'
 import * as DcRegistrarControllerContract from './abis/DcRegistrarController.json'
 import * as ReverseRegistrarContract from './abis/ReverseRegistrar.json'
 import * as ERC721DatastoreContract from './abis/ERC721Datastore.json'
+
+export {
+  DcNSRegistryContract,
+  PublicResolverContract,
+  NamedRegistrarContract,
+  DcRegistrarControllerContract,
+  ReverseRegistrarContract,
+  ERC721DatastoreContract,
+}
