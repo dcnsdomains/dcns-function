@@ -1,6 +1,6 @@
 {
   "name": "@dcnsdomains/function",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "functions for DcNS",
   "main": "dist/index.js",
   "typings": "dist/index.d.ts",
