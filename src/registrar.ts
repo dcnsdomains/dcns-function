@@ -3,7 +3,7 @@ import { getDcRegistrarControllerContract, getERC721DatastoreContract, getNamedR
 import { DcNSRegistry, DcRegistrarController, ERC721Datastore, NamedRegistrar, PublicResolver, ReverseRegistrar } from './abis/types'
 import { namehash } from 'ethers/lib/utils'
 import { BigNumber, ethers } from 'ethers'
-import getProvider, { NETWORK_NAME } from './provider'
+import { NETWORK_NAME } from './provider'
 
 declare global {
   interface Window {
@@ -11,7 +11,7 @@ declare global {
   }
 }
 
-export default class Registrar {
+export class Registrar {
   provider: StaticJsonRpcProvider
   registry: DcNSRegistry
   defaultResolver: PublicResolver
